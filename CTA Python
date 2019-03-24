@@ -12,15 +12,15 @@ class Salary:
 		state_code = rec['state_code']
 		rec ['state_name'] = STATE_CODE_MAP[state_code]
 
-	input_data = [
-		{'employee_name': 'Susan', 'salary': 100000.0, 'state_code': 'WA'},
-		{'employee_name': 'Ellen', 'salary': 75000.0, 'state_code': 'TX'},
+input_data = [
+	{'employee_name': 'Susan', 'salary': 100000.0, 'state_code': 'WA'},
+	{'employee_name': 'Ellen', 'salary': 75000.0, 'state_code': 'TX'},
 	]
 
-	for rec in input_data:
-		update_employee_record(rec)
-		name = rec['employee_name']
-		salary = rec['salary']
-		state = rec['state_name']
-		print(name + ' now lives in ' +  state)
-		print( 'and makes $' +  str(salary))
+for rec in input_data:
+	Salary.update_employee_record(rec)
+	name = rec['employee_name']
+	salary = rec['salary']
+	state = rec['state_name']
+	print(name + ' now lives in ' +  state)
+	print( 'and makes $' +  str(salary))
