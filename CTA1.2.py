@@ -3,11 +3,6 @@ STATE_CODE_MAP = {'WA': 'Washington', 'TX': 'Texas'}
 
 # This is the beginning of the script
 
-SALARY_RAISE_FACTOR = 0.05
-STATE_CODE_MAP = {'WA': 'Washington', 'TX': 'Texas'}
-
-# This is the beginning of the script
-
 class Salary:
 
 	def update_employee_record(rec):
@@ -29,4 +24,7 @@ for rec in input_data:
 	state = rec['state_name']
 	print(name + ' now lives in ' +  state)
 	print( 'and makes $' +  str(salary))
+
+#edit to test adding a branch and make general corrections
+
 
